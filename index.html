@@ -12,17 +12,31 @@
     
     <header class="header">
         <p>LUCAS RAUSCHKOLB</p>
+        
+        <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+              <span></span>
+              <span></span>
+              <span></span>
+        </div>
+
             <ul class="nav-links">
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#">Projetos</a></li>
             <li><a href="#">Quem Sou</a></li>
-            <li><a href="#">Contato</a></li>
-  </ul>
+            <li><a href="Contato.html">Contato</a></li>
+            </ul>
     </header>
 
     <main class="container"> 
-        <p>This is the main content of the home page.</p>
-        <img class="image" src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="Black cat with wide eyes sitting next to playful handwritten text">
+    <p>This is the main content of the home page.</p>
+    <img class="image" src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="Black cat with wide eyes sitting next to playful handwritten text">
+
+        <div class="figma-btn-group">
+            <button class="figma-btn" type="button">LinkedIn</button>
+            <button class="figma-btn" type="button">Whatsapp</button>
+            <button class="figma-btn" type="button">E-mail</button>
+        </div>
+
     </main>
 
     <footer class="footer">
