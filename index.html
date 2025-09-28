@@ -10,37 +10,68 @@
 
 <body class="body">
     
-    <header class="header">
-        <p>LUCAS RAUSCHKOLB</p>
-        
-        <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-              <span></span>
-              <span></span>
-              <span></span>
-        </div>
-
-            <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Quem Sou</a></li>
-            <li><a href="Contato.html">Contato</a></li>
-            </ul>
-    </header>
+        <header class="header">
+            <div class="header-content">
+            <p class="header-title">LUCAS RAUSCHKOLB</p>
+                <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="quemsou.html">Quem Sou</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </header>
 
     <main class="container"> 
+
+        <div class="banner">
+            
+        </div>
+
+        <div class="spacer"></div>
+
+    <section class="box-projetos">
+    
+        <div class="center-text">
+        <h2 class="h2-bold">Principais trabalhos</h2>
+        <p class="h1">Navegue por categoria</p>
+        </div>  
+    <div class="carrossel-projetos">
+        <a href="motion.html" class="carrossel-item">
+            <img class="carrossel-image" src="assets/exemplo.jpg" alt="Imagem do trabalho Motion">
+            <p class="carrossel-titulo">Motion</p>
+        </a>
+        <a href="comunicacao-visual.html" class="carrossel-item">
+            <img class="carrossel-image" src="assets/exemplo.jpg" alt="Imagem do trabalho Comunicação Visual">
+            <p class="carrossel-titulo">Comunicação Visual</p>
+        </a>
+        <a href="digital.html" class="carrossel-item">
+            <img class="carrossel-image" src="assets/exemplo.jpg" alt="Imagem do trabalho Digital">
+            <p class="carrossel-titulo">Digital</p>
+        </a>
+        <a href="impressos.html" class="carrossel-item">
+            <img class="carrossel-image" src="assets/exemplo.jpg" alt="Imagem do trabalho Impressos">
+            <p class="carrossel-titulo">Impressos</p>
+        </a>
+    </div>
+    </section>
+
     <p>This is the main content of the home page.</p>
     <img class="image" src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="Black cat with wide eyes sitting next to playful handwritten text">
 
-        <div class="figma-btn-group">
-            <button class="figma-btn" type="button">LinkedIn</button>
-            <button class="figma-btn" type="button">Whatsapp</button>
-            <button class="figma-btn" type="button">E-mail</button>
-        </div>
+    <section>
+
+    </section>
 
     </main>
 
     <footer class="footer">
-        <p>&copy; Desenvolvido por <b><a href="/about">Lucas Rauschkolb</a></b></p>
+        <p>&copy; Desenvolvido por <b><a href="/Quem-sou">Lucas Rauschkolb</a></b></p>
     </footer>
 
 </body>

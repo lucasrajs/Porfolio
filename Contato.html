@@ -10,35 +10,37 @@
 
 <body class="body">
     
-    <header class="header">
-        <p>LUCAS RAUSCHKOLB</p>
-        
-        <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-              <span></span>
-              <span></span>
-              <span></span>
-        </div>
+        <header class="header">
+            <div class="header-content">
+            <p class="header-title">LUCAS RAUSCHKOLB</p>
+                <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="quemsou.html">Quem Sou</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </header>
 
-            <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Quem Sou</a></li>
-            <li><a href="Contato.html">Contato</a></li>
-            </ul>
-    </header>
+    <main class="container-contato"> 
 
-    <main class="container"> 
+                <div class="spacer"></div>
+
         <section class="contato-layout">
-            <img class="contato-image" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGlteXVjczZodGdwcWd6eGo5OTlvdnB2bWRtOTVub3Zpd2hhdHZ2MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/e1XbElGxYqcBa/giphy.gif">
+            <img class="contato-image" src="assets/foto-perfil.png" alt="Foto de perfil de Lucas Rauschkolb">
             <div class="contato-text">
                 <p class="h2-bold">Entre em contato</p>
-                <p class="h1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p class="h1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <div class="figma-btn-group">
-            <button class="figma-btn" type="button">LinkedIn</button>
-            <button class="figma-btn" type="button">Whatsapp</button>
-            <button class="figma-btn" type="button">E-mail</button>
-                    </div>
+                <p class="h1" style="text-align: justify;">Estou sempre aberto a novos projetos, parcerias e conversas criativas. Se quiser discutir uma ideia, solicitar um orçamento ou simplesmente trocar uma ideia sobre design, fique à vontade para me enviar uma mensagem pelos canais abaixo. Vou responder o mais breve possível!</p>
+        <div class="figma-btn-group">
+            <button class="figma-btn" type="button" onclick="window.open('https://www.linkedin.com/in/lucasrajs/','_blank')">LinkedIn</button>
+            <button class="figma-btn" type="button" onclick="window.open('https://api.whatsapp.com/send?phone=5511976330596','_blank')">Whatsapp</button>
+            <button class="figma-btn" type="button" onclick="window.open('mailto:contato@lucasrajs.com.br','_blank')">E-mail</button>
+        </div>
             </div>         
         </section>
 
