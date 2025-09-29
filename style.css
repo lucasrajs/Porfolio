@@ -400,3 +400,63 @@ body {
     align-items: center;
   }
 }
+
+/* ================= TELA PROJETOS ================= */
+
+/* Estilos para a seção de projetos (a mesma div box-projetos que já existe) */
+
+.lrc-center-text {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.lrc-titulo-principal {
+    font-size: 2em; /* Tamanho da fonte para "Principais trabalhos" */
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.lrc-subtitulo { /* Usado para "Navegue por categoria" */
+    font-size: var(--font-h1);
+}
+
+/* Container da grade (Grid 2x2) */
+.lrc-grid-projetos {
+    display: grid;
+    /* Define 2 colunas de largura igual, com um espaçamento de 20px entre elas */
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; 
+    max-width: 1200px; /* Largura máxima do grid, ajuste conforme seu design */
+    margin: 0 auto; /* Centraliza o grid */
+}
+
+/* Estilo para cada card de projeto (o link) */
+.lrc-projeto-card {
+    display: flex;
+    flex-direction: column; /* Coloca o conteúdo e o título em coluna */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit;
+}
+
+/* onde a imagem irá */
+.lrc-projeto-content {
+    background-color: var(--cor004); /* Cor de fundo da caixa, ajuste para ser mais escura */
+    height: 300px; /* Altura da caixa */
+    width: 400px;
+    margin-bottom: 0.5rem; /* Espaço entre a caixa e o título */
+    border-radius: 0.5rem; /* Adiciona um leve arredondamento */
+    transition: transform 0.3s ease; 
+}
+
+/* Título da categoria */
+.lrc-projeto-titulo {
+    font-size: var(--font-h2-bold);
+    text-align: center;
+}
+
+/* Responsividade: para telas menores, 1 coluna */
+@media (max-width: 768px) {
+    .lrc-grid-projetos {
+        grid-template-columns: 1fr; /* 1 coluna para telas menores */
+    }
+}
